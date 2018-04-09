@@ -1,0 +1,98 @@
+/* pages/layout/layout.wxss */
+.container {
+  position: relative;
+  padding: 20rpx 0;
+} 
+.search{
+    position:relative;
+    width:750rpx;
+    height:30rpx;
+    /* background:#f00; */
+    margin-bottom: 20px;
+    
+}
+.search input{
+  float: left;
+  border:1px solid #ccc;
+  width:460rpx;
+  font-size: 12px;
+  margin: 0 10rpx;
+  padding-left:270rpx;
+}
+.search text{
+   width:130rpx;
+   font-size: 12px;
+
+}
+.search image{
+  position: absolute;
+  z-index: 99;
+  left:225rpx;
+  top:5rpx;
+  width:20px;
+  height:20px;
+}
+/* 轮播图 */
+.slideshow{
+    width:730rpx;
+    height:300rpx;
+    overflow: hidden;
+    padding: 0 10rpx;
+}
+.slideshow image {
+    width:100%;
+    height:100%;
+}
+/* 子导航 */
+.navsub{
+   margin:20rpx 0 0 0;
+}
+.navsub_item{
+   float: left;
+   width:240rpx;
+   height:50rpx;
+   line-height: 50rpx;
+   /* padding:5rpx; */
+   /* background: #f0f0f0; */
+   /* border: 1px solid #ccc;
+   border-right:0px solid #ccc;
+   border-bottom:0px solid #ccc; */
+   font-size:12px;
+   text-align: center;
+}
+/* 景点 */
+.circulation,
+.navsub{
+   width:750rpx;
+   height:auto;
+  
+   /* background: #e0e0e0; */
+   padding:0 0 0 2px;
+}
+.hot_item{
+   float: left;
+   width:357rpx;
+   height:360rpx;
+   margin:10rpx 8rpx 20rpx 8rpx;
+   /* padding:5rpx; */
+   /* background: #f00; */
+   font-size:12px;
+   text-align: center;
+   border:1px solid #ccc;
+}
+.hot_item image{
+  height:65%;
+  width:100%;
+  background: rgba(0,0,0,0.1);
+}
+.hot_item text{
+  display: block;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.title{
+  line-height:27px;
+  font-weight: bold;
+  font-size:14px;
+}

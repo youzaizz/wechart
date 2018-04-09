@@ -1,0 +1,5 @@
+<!--pages/info/info.wxml-->
+<view class="container">
+    <text>{{title}}</text>
+</view>
+

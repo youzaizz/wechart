@@ -1,0 +1,4 @@
+<!--pages/threeTour/threeTour.wxml-->
+<view class='container'>
+    <text>三日游</text>
+</view>

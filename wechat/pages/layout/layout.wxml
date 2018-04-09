@@ -1,0 +1,38 @@
+<!--pages/layout/layout.wxml-->
+<!-- 轮播图 -->
+<view class="container">
+    <!-- 搜索 -->
+    <form>
+          <view class="search">
+              <input placeholder='搜索景点、地点名称'/>
+              <image src="../../images/search.png"></image>   <!-- 点击进入搜索页 -->
+          </view>
+    </form>
+    <!-- 轮播图 -->
+    <view class="slideshow">
+        <swiper indicator-dots="true"
+  autoplay="true" interval="5000" duration="1000">
+            <block wx:for="{{slides}}" wx:key="{{key}}" wx:for-index="index">
+                <swiper-item bindtap='slidesInfo'>
+                     <image src="{{item.url}}"></image>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+     <!-- navsub -->
+     <view class="navsub">
+        <view class='aaa' wx:for="{{navsub}}" wx:key="key"> <!--在wx:for后面添加wx:key="key" 可消除警告-->
+            <view class="navsub_item">{{item.text}}</view>
+        </view>
+    </view>
+     <!-- 景点 -->
+     <view class="circulation">
+        <view class='hot'  wx:for="{{items}}" wx:key="key"> <!--在wx:for后面添加wx:key="key" 可消除警告-->
+            <view class="hot_item" bindtap='info' id="{{item.text}}">   <!-- 1.传递给跳转页面的参数 -->
+                 <image src="{{item.imgURL}}">{{item.index}}</image>
+                 <text class='title'>{{item.text}}</text>
+                 <text>{{item.message}}</text>
+            </view>
+        </view>
+    </view>
+</view>

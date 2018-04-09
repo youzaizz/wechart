@@ -1,0 +1,5 @@
+<!--pages/collect/collect.wxml-->
+<view class="container">
+    <text>收藏</text>
+</view>
+

@@ -1,0 +1,4 @@
+<!--pages/topSearch/topSearch.wxml-->
+<view class="container">
+    <text>热搜</text>
+</view>

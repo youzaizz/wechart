@@ -1,0 +1,4 @@
+<!--pages/classify/classify.wxml-->
+<view class="container">
+    <text>地点</text>
+</view>

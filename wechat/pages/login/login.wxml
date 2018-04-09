@@ -1,0 +1,7 @@
+<!--pages/login/login.wxml-->
+<view class='container'>
+    <view class='form'>
+        <label>用户名：</label><input></input>
+        <label>密码：</label><input></input>
+    </view>
+</view>
